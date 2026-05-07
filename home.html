@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PesqueiroPro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-blue { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); }
+        .feature-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .bg-navy { background-color: #1e3a8a; }
+        .text-navy { color: #1e3a8a; }
+        .text-orange-cta { color: #f97316; }
+        .bg-orange-cta { background-color: #f97316; }
+        .laptop-frame { border: 12px solid #334155; border-radius: 1rem 1rem 0 0; }
+        .mobile-frame { border: 8px solid #334155; border-radius: 2rem; overflow: hidden; }
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .scroll-track { display: flex; width: calc(250px * 10); animation: scroll 30s linear infinite; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black flex items-center gap-2 group">
+                <i class="fas fa-fish text-orange-500 transform group-hover:scale-110 group-hover:-rotate-12 transition-all duration-300"></i>
+                <span class="tracking-tighter text-navy uppercase">Pesqueiro<span class="text-blue-600">Pro</span></span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#funcionalidades" class="text-slate-600 hover:text-blue-600 font-medium">Funcionalidades</a>
+                <a href="#torpeba" class="text-slate-600 hover:text-blue-600 font-medium">Casos de Sucesso</a>
+                <a href="https://pesqueiropro-v-1.base44.app" target="_blank" rel="noopener noreferrer" class="bg-orange-cta text-white px-6 py-2 rounded-full font-bold shadow-lg shadow-orange-200 hover:opacity-90 transition">Testar Grátis</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="gradient-blue pt-20 pb-32 px-4 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <span class="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block">Lançamento v1.0</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                A ferramenta definitiva para <br> <span class="text-blue-200">administrar torneios de pesca</span>
+            </h1>
+            <p class="text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
+                Esqueça as planilhas manuais. O Torpeba automatiza rankings, gera mapas de calor e gerencia capturas em tempo real com máxima intuitividade.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://pesqueiropro-v-1.base44.app" target="_blank" rel="noopener noreferrer" class="bg-orange-cta text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:scale-105 transition">Ver Demonstração</a>
+                <a href="https://wa.me/5594981193607?text=Olá!%20Vim%20pelo%20site%20do%20PesqueiroPro%20e%20quero%20mais%20informações" target="_blank" rel="noopener noreferrer" class="bg-orange-cta text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:scale-105 transition">Falar com Consultor</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="torpeba" class="py-20 px-4 -mt-16">
+        <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-100">
+            <div class="grid md:grid-cols-2">
+                <div class="p-10 md:p-16 flex flex-col justify-center">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-trophy text-orange-500 text-2xl"></i>
+                        <span class="text-slate-500 font-bold tracking-tighter uppercase">Validado no 4º Torpeba</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6 text-slate-800 text-left">Aprovado como ferramenta administrativa oficial</h2>
+                    <p class="text-slate-600 text-lg mb-8 text-left leading-relaxed">
+                        No Pesqueiro Dubagda, o sistema gerenciou com precisão todas as capturas, aplicando automaticamente a regra de desempate por tamanho e a soma dos 5 maiores peixes por equipe.
+                    </p>
+                    <div class="flex items-center gap-4 border-t pt-8">
+                        <div class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg text-center">
+                            <span class="block font-bold text-2xl">100%</span>
+                            <span class="text-xs uppercase font-bold">Digital</span>
+                        </div>
+                        <div class="bg-green-100 text-green-700 px-4 py-2 rounded-lg text-center">
+                            <span class="block font-bold text-2xl">Zero</span>
+                            <span class="text-xs uppercase font-bold">Erros de Cálculo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-100 p-8 flex items-center justify-center">
+                    <img src="imagens/relatorios.jpeg" alt="Dashboard Torpeba" class="rounded-xl shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Vídeo do Torneio -->
+    <section class="py-20 px-4 bg-slate-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 text-navy">Veja o Torneio em Ação</h2>
+            <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-3xl shadow-2xl border-4 border-white">
+                <iframe 
+                    src="https://drive.google.com/file/d/1YUBuk7X2MA9etLvdCIw_57kLpAX2GU1f/preview" 
+                    class="absolute top-0 left-0 w-full h-full" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="mt-6 text-slate-500 italic">Confira os melhores momentos e a agilidade na gestão das capturas com o Torpeba.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Funcionalidades -->
+    <section id="funcionalidades" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Recursos Pensados para Pescadores</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Tecnologia de ponta para garantir a transparência e a emoção de cada fisgada.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card p-8 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-users-cog text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Ranking por Equipe</h3>
+                    <p class="text-slate-600 leading-relaxed">Lógica inteligente que soma automaticamente apenas os 5 maiores peixes de cada equipe, mantendo a competitividade em alto nível até o último minuto.</p>
+                </div>
+                <div class="feature-card p-8 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-balance-scale text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Desempate Justo</h3>
+                    <p class="text-slate-600 leading-relaxed">Transparência total: o sistema exibe todos os pescadores com medidas idênticas (ex: 19,5 cm), permitindo auditoria rápida e critérios de desempate técnicos.</p>
+                </div>
+                <div class="feature-card p-8 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-map-marked-alt text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Mapa de Calor</h3>
+                    <p class="text-slate-600 leading-relaxed">Visualize hotspots georreferenciados. Organizadores entendem os melhores pontos do lago e pescadores analisam o comportamento dos peixes no torneio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Multiplataforma (Vitrine de Telas) -->
+    <section class="py-20 px-4 bg-slate-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Controle Total, em Qualquer Dispositivo</h2>
+                <p class="text-blue-300">Do painel administrativo no PC à palma da mão dos fiscais no app.</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Versão Web -->
+                <div class="relative">
+                    <p class="text-orange-400 font-bold mb-4 uppercase tracking-wider text-sm">Painel Administrativo Web</p>
+                    <div class="laptop-frame bg-white shadow-2xl">
+                        <img src="imagens/home.jpeg" alt="Web Dashboard" class="w-full h-auto">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-1/2 shadow-2xl laptop-frame bg-white hidden md:block">
+                        <img src="imagens/mapa de calor.jpeg" alt="Mapa de Calor Web" class="w-full h-auto">
+                    </div>
+                </div>
+
+                <!-- Versão App -->
+                <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+                    <div class="text-center md:text-left">
+                        <p class="text-orange-400 font-bold mb-4 uppercase tracking-wider text-sm">App do Fiscal & Pescador</p>
+                        <h3 class="text-2xl font-bold mb-6 leading-tight">Agilidade no <br>Lançamento de Capturas</h3>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="bg-orange-cta text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition inline-block">Baixar Aplicativo</a>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="mobile-frame w-48 shadow-2xl">
+                            <img src="imagens/home app.jpeg" alt="home app" class="w-full">
+                        </div>
+                        <div class="mobile-frame w-48 shadow-2xl mt-8">
+                            <img src="imagens/Capituras app.jpeg" alt="Capituras app" class="w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Patrocinadores -->
+    <section class="py-16 px-4 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-center text-slate-500 font-bold uppercase tracking-[0.2em] mb-12 text-sm">Organizadores e Parceiros que Confiam</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60 grayscale hover:grayscale-0 transition duration-500">
+                <!-- Aqui o organizador pode colocar os logos conforme a referência patrocinadores.jpeg -->
+                <img src="imagens/patrocinadores.jpeg" alt="Parceiros" class="col-span-full max-w-4xl mx-auto w-full rounded-xl">
+            </div>
+            <p class="text-center mt-8 text-slate-400 text-sm italic">Sua marca em destaque para milhares de pescadores esportivos.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-navy pt-20 pb-10 px-4 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-3xl font-black mb-6 text-white flex items-center gap-2">
+                        <i class="fas fa-fish text-orange-500"></i>
+                        <span class="tracking-tighter">PESQUEIRO<span class="text-blue-400">PRO</span></span>
+                    </div>
+                    <p class="text-blue-200 mb-6 max-w-sm">Elevando o nível dos torneios de pesca com tecnologia de gestão inteligente e transparência total.</p>
+                    <div class="flex gap-4">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-orange-cta transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-orange-cta transition"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-orange-cta transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Navegação</h4>
+                    <ul class="space-y-4 text-blue-200">
+                        <li><a href="#funcionalidades" class="hover:text-orange-400">Funcionalidades</a></li>
+                        <li><a href="#torpeba" class="hover:text-orange-400">Casos de Sucesso</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Preços</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Localização</h4>
+                    <p class="text-blue-200 flex items-start gap-3">
+                        <i class="fas fa-map-marker-alt mt-1 text-orange-400"></i>
+                        Barcarena, Pará<br>Amazônia, Brasil
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-blue-400 text-sm">
+                <p>&copy; 2024 vam.dev. (Copyright) Todos os direitos reservados.</p>
+                <p>Desenvolvido para pesca esportiva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Camada de Script: Orquestração do Frontend -->
+    <script type="module">
+        /**
+         * @file home.html (script section)
+         * @description Orquestrador da Camada de Apresentação.
+         *              Importa dados, lógica e componentes de UI para renderizar a página.
+         */
+        import { mockData } from './mockData.js';
+        import { calculateTeamScores, findRecordFishWithTies } from './tournamentEngine.js';
+
+        // 1. Obter dados da camada de dados
+        const { catches, teams } = mockData;
+
+        // 2. Processar dados usando a camada de lógica
+        const teamScores = calculateTeamScores(catches, teams);
+        const recordFish = findRecordFishWithTies(catches);
+
+        console.log("--- Torpeba: Relatório de Torneio ---");
+        console.log("Ranking de Equipes (Top 5 peixes):", teamScores);
+        console.log(`Recorde Atual: ${recordFish.size}cm por: ${recordFish.anglers.join(', ')}`);
+    </script>
+</body>
+</html>
