@@ -3,6 +3,11 @@
  * Estrutura preparada para ser substituída por uma chamada de API (fetch/axios).
  */
 export const tournamentData = {
+    plans: {
+        BASIC: { id: 'basic', name: 'Básico', price: '1.000', hasGeolocation: false, hasAdvancedLogic: true },
+        PRO: { id: 'pro', name: 'Pro', price: '1.200', hasGeolocation: true, hasAdvancedLogic: true }
+    },
+    currentPlan: 'pro',
     teams: [
         { id: 1, name: "Tucuna Master", color: "blue" },
         { id: 2, name: "Pira Amigos", color: "green" },

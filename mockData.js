@@ -6,6 +6,17 @@
  */
 export const mockData = {
     /**
+     * Configurações de planos do sistema.
+     * O plano Básico não possui acesso à geolocalização em tempo real.
+     */
+    plans: {
+        BASIC: { id: 'basic', name: 'Básico', price: '1.000', hasGeolocation: false, hasAdvancedLogic: true },
+        PRO: { id: 'pro', name: 'Pro', price: '1.200', hasGeolocation: true, hasAdvancedLogic: true }
+    },
+    /** Define qual plano está ativo para o torneio atual */
+    activePlan: 'pro',
+
+    /**
      * Lista de equipes participantes no torneio.
      * @type {Array<Object>}
      */
